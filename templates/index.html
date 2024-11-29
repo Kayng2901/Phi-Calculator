@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laplace Table</title>
+</head>
+<body>
+    <h1>Laplace Table Calculator</h1>
+    <form method="post">
+        <label for="x_value">Enter x:</label>
+        <input type="text" id="x_value" name="x_value" required>
+        <button type="submit">Calculate Φ(x)</button>
+    </form>
+    {% if result %}
+    <h2>Result: {{ result }}</h2>
+    {% endif %}
+</body>
+</html>
